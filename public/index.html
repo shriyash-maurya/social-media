@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pulse Social</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-icon">P</div>
+        <div>
+          <p class="eyebrow">Social hub</p>
+          <h2>Pulse</h2>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <a href="#">Feed</a>
+        <a href="#">People</a>
+      </nav>
+    </header>
+
+    <main class="main-layout">
+      <section class="content-column">
+        <div class="card profile-card">
+          <div class="profile-card-header">
+            <div>
+              <p class="eyebrow">Your account</p>
+              <h3 id="currentUser">Not logged in</h3>
+            </div>
+            <span class="status-pill">Online</span>
+          </div>
+          <div class="auth-form">
+            <input id="authUsername" placeholder="Username">
+            <input id="authPassword" placeholder="Password" type="password">
+            <input id="authBio" placeholder="Short bio (optional)">
+            <div class="button-row">
+              <button id="register" type="button">Register</button>
+              <button id="login" type="button">Login</button>
+              <button id="updateProfile" type="button" class="secondary-btn" style="display:none">Update</button>
+              <button id="logout" type="button" class="ghost-btn" style="display:none">Logout</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card composer-card">
+          <div class="composer-head">
+            <div class="avatar avatar-large">U</div>
+            <div>
+              <p class="eyebrow">Create post</p>
+              <h3>What's happening?</h3>
+            </div>
+          </div>
+          <textarea id="postContent" placeholder="Share your thoughts, updates, or ideas..."></textarea>
+          <div class="composer-footer">
+            <span class="muted-text">Everyone can see this post</span>
+            <button id="createPost" type="button">Post now</button>
+          </div>
+        </div>
+
+        <div class="card feed-card">
+          <div class="section-title-row">
+            <div>
+              <p class="eyebrow">Live feed</p>
+              <h3>Latest posts</h3>
+            </div>
+            <span class="feed-badge">Fresh</span>
+          </div>
+          <div id="feed" class="feed-list"></div>
+        </div>
+      </section>
+
+      <aside class="sidebar-column">
+        <div class="card users-card">
+          <div class="section-title-row compact">
+            <div>
+              <p class="eyebrow">Community</p>
+              <h3>People</h3>
+            </div>
+          </div>
+          <div id="usersList" class="users-list"></div>
+        </div>
+
+        <div class="card tips-card">
+          <p class="eyebrow">Quick tip</p>
+          <p>Register and log in to follow people, like posts, and join the conversation.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
