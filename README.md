@@ -2,7 +2,7 @@
 
 A mini social media platform built with **Express.js** (backend) and **HTML/CSS/JavaScript** (frontend) using **SQLite** for data storage.
 
-## Features
+## Feature
 
 ✅ **User Profiles** — Create account, update name and bio  
 ✅ **Posts & Feed** — Create posts, view all posts  
